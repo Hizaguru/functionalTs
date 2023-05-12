@@ -1,4 +1,4 @@
-module functions_as_first_class_citizens_demo_one {
+namespace functions_as_first_class_citizens_demo_one {
 
     function find<T>(arr: T[], filter: (i: T) => boolean) {
         return arr.filter(filter);
@@ -31,7 +31,7 @@ module functions_as_first_class_citizens_demo_one {
     
 }
 
-module functions_as_first_class_citizens_demo_two {
+namespace functions_as_first_class_citizens_demo_two {
 
     function find<T>(filter: (i: T) => boolean) {
         return (arr: T[]) => {
