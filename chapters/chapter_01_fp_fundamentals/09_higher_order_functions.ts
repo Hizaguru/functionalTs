@@ -1,4 +1,4 @@
-module _higher_order_functions_demo_one {
+namespace _higher_order_functions_demo_one {
 
     function addDelay(msg: string, ms: number) {
         return () => {
@@ -13,7 +13,7 @@ module _higher_order_functions_demo_one {
 
 }
 
-module _higher_order_functions_demo_two {
+namespace _higher_order_functions_demo_two {
 
     function addDelay(func: () => void, ms: number) {
         return () => {
